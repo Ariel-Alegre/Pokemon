@@ -1,0 +1,63 @@
+.appContainer {
+  margin-left: 2rem;
+}
+
+.orderList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 230px);
+  list-style: none;
+  color: white;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.orderFilters {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.btnCreate {
+  margin-top: -25px;
+  margin-left: 60rem;
+}
+
+.btn {
+  background-color: rgb(7, 102, 161);
+  color: white;
+  box-shadow: 0 0 4px;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.btnExit {
+  float: right;
+  margin-right: 129px;
+  background-color: rgb(7, 102, 161);
+  color: white;
+  box-shadow: 0 0 3px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.loading {
+  font-size: 5rem;
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.orderLoading {
+  margin-top: 10rem;
+  margin-left: 32rem;
+}

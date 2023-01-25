@@ -1,0 +1,12 @@
+.select {
+  background-color: rgb(7, 102, 161);
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  box-shadow: 0 0 4px;
+  cursor: pointer;
+}
+
+.opt {
+  cursor: pointer;
+}
