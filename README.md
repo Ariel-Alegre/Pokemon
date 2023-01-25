@@ -2,4 +2,4 @@
  
 #DEMO: https://pokemon-chi-pied.vercel.app
 
-#Tecnologias utilizadas: Node.js || PostgreSQL || Sequelize || JavaScrtipt || HTML || CSS || React || Redux
+#Tecnologias utilizadas: HTML | CSS | JavaScript | React | Redux | Express | Node.js | PostgreSQL | Sequelize 
