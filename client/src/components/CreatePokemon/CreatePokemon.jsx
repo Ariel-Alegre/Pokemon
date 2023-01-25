@@ -30,54 +30,54 @@ const CreatePokemon = () => {
   const validate = (input) => {
     let errors = {};
     if (!input.name.length) {
-      errors.name = "El nombre es requerido";
+      errors.name = "The name is required";
     }
     if (!noEmpty.test(input.name) || !validateName.test(input.name)) {
-      errors.name = "solo se acepta letras";
+      errors.name = "only letters are accepted";
     }
     if (!input.image.length) {
-      errors.image = "La url de la imagen es requerida";
+      errors.image = "The image url is required";
     }
     if (input.hp < 0) {
-      errors.hp = "El nivel de vida no puede ser menor un numero negativo";
+      errors.hp = "The standard of living cannot be less than a negative number";
     }
 
     if (input.hp > 100) {
-      errors.hp = "El nivel de vida no puede ser mayor a 100";
+      errors.hp = "The standard of living cannot be higher than 100";
     }
     if (input.attack < 0) {
-      errors.attack = "El nivel de ataque no puede ser un numero negativo";
+      errors.attack = "Attack level cannot be a negative number.";
     }
     if (input.attack > 100) {
       errors.attack = "El nivel de ataque no puede ser mayor a 100";
     }
     if (input.defense < 0) {
-      errors.defense = "El nivel de defensa no puede ser un numero negativo";
+      errors.defense = "Attack level cannot be higher than 100";
     }
     if (input.defense > 100) {
-      errors.defense = "El nivel de defensa no puede ser mayor a 100";
+      errors.defense = "Defense level cannot be higher than 100";
     }
     if (input.speed < 0) {
-      errors.speed = "El nivel de velocidad no puede ser un numero negativo";
+      errors.speed = "Speed level cannot be a negative number";
     }
     if (input.speed > 100) {
-      errors.speed = "El nivel de velocidad no puede ser mayor a 100";
+      errors.speed = "The speed level cannot be higher than 100";
     }
     if (input.height < 0) {
-      errors.height = "La altura no puede ser un numero negativo";
+      errors.height = "Height cannot be a negative number";
     }
     if (input.height > 100) {
-      errors.height = "La altura no puede ser mayor a 100";
+      errors.height = "Height cannot be greater than 100";
     }
     if (input.weight < 0) {
-      errors.weight = "El peso no puede ser un numero negativo";
+      errors.weight = "Weight cannot be a negative number";
     }
     if (input.weight > 100) {
-      errors.weight = "El peso no puede ser mayor a 100";
+      errors.weight = "Weight cannot be greater than 100";
     }
 
     if (!input.types.length) {
-      errors.types = "El tipo es requerido";
+      errors.types = "type is required";
     }
 
     return errors;

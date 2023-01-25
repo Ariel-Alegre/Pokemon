@@ -60,7 +60,7 @@
 }
 
 .error {
-  color: red;
+  color: rgba(195, 8, 8, 0.867);
   font-size: 12px;
 }
 
