@@ -18,7 +18,7 @@ const { REACT_APP_SERVER_BACK } = process.env
 export const getallPokemon = () => {
 
     return async (dispatch) => {
-        const res = await axios.get(`${REACT_APP_SERVER_BACK}/pokemons`);
+        const res = await axios.get(`https://pokemon-production-c5a3.up.railway.app/pokemons`);
         const data = res.data
         return dispatch({
             type: GET_ALL_POKEMONS,
@@ -30,7 +30,7 @@ export const getallPokemon = () => {
 
 export const getPokemonName = (name) => {
     return async (dispatch) => {
-        const url = `${REACT_APP_SERVER_BACK}/pokemons?name=${name}`
+        const url = `https://pokemon-production-c5a3.up.railway.app/pokemons?name=${name}`
         const res = await axios.get(url);
         const data = res.data;
         return dispatch({
@@ -43,7 +43,7 @@ export const getPokemonName = (name) => {
 
 export const postPokemon = (payload) => {
     return async (dispatch) => {
-        const res = await axios.post(`${REACT_APP_SERVER_BACK}/pokemons/`, payload)
+        const res = await axios.post(`https://pokemon-production-c5a3.up.railway.app/pokemons/`, payload)
         const data = res.data;
 
         return dispatch({
@@ -57,7 +57,7 @@ export const postPokemon = (payload) => {
 export const filterByType = () => {
 
     return async (dispatch) => {
-        const { data } = await axios.get(`${REACT_APP_SERVER_BACK}/types`);
+        const { data } = await axios.get(`https://pokemon-production-c5a3.up.railway.app/types`);
 
         return dispatch({
             type: FILTER_BY_TYPE,
@@ -83,7 +83,7 @@ export const orderBytype = (payload) => {
 
 export const getPokemonDetail = (id) => {
     return async (dispatch) => {
-        const res = await axios.get(`${REACT_APP_SERVER_BACK}/pokemons/${id}`);
+        const res = await axios.get(`https://pokemon-production-c5a3.up.railway.app/pokemons/${id}`);
         const data = res.data;
 
         return dispatch({
