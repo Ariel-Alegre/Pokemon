@@ -40,8 +40,6 @@ const rootReducer = (state = initialState, action) => {
                 ...state,
                 typePokemons: action.payload
             }
-
-
         case ORDER_BY:
             let vgCopy = [...state.showPokemons];
             let ordenamiento
