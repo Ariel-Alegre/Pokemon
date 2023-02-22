@@ -84,7 +84,6 @@ const rootReducer = (state = initialState, action) => {
                     ordenamiento = vgCopy
                     break;
             }
-
             return {
                 ...state,
                 allpokemons: ordenamiento,
