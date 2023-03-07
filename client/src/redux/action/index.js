@@ -12,7 +12,7 @@ export const FILTER_ORIGEN = "FILTER_ORIGEN";
 export const CLEAN_DETAILS = "CLEAN_DETAILS";
 
 
-const { REACT_APP_SERVER_BACK } = process.env
+//const { REACT_APP_SERVER_BACK } = process.env
 
 
 export const getallPokemon = () => {

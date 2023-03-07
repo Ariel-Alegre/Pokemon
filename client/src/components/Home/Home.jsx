@@ -49,7 +49,7 @@ const Home = () => {
           <MdExitToApp />
         </button>
       </Link>
-      <div>
+      <div className={style.search}>
         <Search setCurrentPage={setCurrentPage} />
       </div>
       <div className={style.orderFilters}>

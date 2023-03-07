@@ -8,24 +8,25 @@
 .input {
   position: absolute;
   border: none;
-  width: 15rem;
-  height: 1.2rem;
+  width: 20rem;
+  height: 1.8rem;
   border-radius: 3px;
+  margin-top: 10px;
+  margin-left: -20px;
 }
 
 .btnContainer {
   border: none;
-  height: 1.2rem;
   position: relative;
-  margin-left: 15rem;
-  margin-top: -2px;
+  margin-left: 17.5rem;
+  margin-top: 10px;
   border-radius: 3px;
 }
 
 .btn {
   background-color: rgb(7, 102, 161);
   border: none;
-  height: 22.5px;
+  height: 30.5px;
   cursor: pointer;
   color: white;
   border-radius: 2px;
